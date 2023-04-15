@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ceca5c04b41de844182eb856466ff115
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Loong-WenqingGBT-Flash
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3af370c264a30e34db35c39c3fb287ef, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
