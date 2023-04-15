@@ -2228,6 +2228,7 @@ GameObject:
   - component: {fileID: 244824491}
   - component: {fileID: 244824490}
   - component: {fileID: 244824489}
+  - component: {fileID: 244824492}
   m_Layer: 5
   m_Name: Button_LastPage
   m_TagString: Untagged
@@ -2300,9 +2301,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 931687910}
-        m_TargetAssemblyTypeName: PopularControl, Assembly-CSharp
-        m_MethodName: startBt
+      - m_Target: {fileID: 244824492}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ChangeSceneTo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2350,6 +2351,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244824487}
   m_CullTransparentMesh: 1
+--- !u!114 &244824492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244824487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cf509e3ddaeaf54ab3b43d2f9d876ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScene: 1ChooseScene
 --- !u!1 &269916994
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,7 +7713,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 4160, y: 1920}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
