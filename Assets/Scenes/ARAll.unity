@@ -870,6 +870,7 @@ GameObject:
   - component: {fileID: 644125708}
   - component: {fileID: 644125711}
   - component: {fileID: 644125712}
+  - component: {fileID: 644125713}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -972,6 +973,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PointCloudPrefab: {fileID: 0}
+--- !u!114 &644125713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644125705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b15f82cc229284894964d2d30806969d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HumanSegmentationStencilMode: 0
+  m_HumanSegmentationDepthMode: 0
+  m_EnvironmentDepthMode: 1
+  m_EnvironmentDepthTemporalSmoothing: 1
+  m_OcclusionPreferenceMode: 0
 --- !u!1001 &679761716
 PrefabInstance:
   m_ObjectHideFlags: 0
