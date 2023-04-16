@@ -84,7 +84,7 @@ public class ObjController : MonoBehaviour
                 }
             }
             speed_x += a * Time.deltaTime;
-            transform.position = new Vector3(transform.position.x , cur_y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + speed_x, cur_y, transform.position.z);
             //Ðý×ª
             rotate_y += Time.deltaTime * 20;
             transform.rotation = Quaternion.Euler(0, rotate_y, 0);
