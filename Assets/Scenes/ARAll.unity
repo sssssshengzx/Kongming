@@ -869,8 +869,6 @@ GameObject:
   - component: {fileID: 644125709}
   - component: {fileID: 644125708}
   - component: {fileID: 644125711}
-  - component: {fileID: 644125712}
-  - component: {fileID: 644125713}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -960,36 +958,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Prefab: {fileID: 583560329209154917, guid: bc196c1f49bc409439c31c2579305ad7, type: 3}
---- !u!114 &644125712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644125705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab0e80cee9cc1d44928bfe488dd1e2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PointCloudPrefab: {fileID: 0}
---- !u!114 &644125713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644125705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b15f82cc229284894964d2d30806969d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HumanSegmentationStencilMode: 0
-  m_HumanSegmentationDepthMode: 0
-  m_EnvironmentDepthMode: 1
-  m_EnvironmentDepthTemporalSmoothing: 1
-  m_OcclusionPreferenceMode: 0
 --- !u!1001 &679761716
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1569,7 +1537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6655317027247695836, guid: de538d394a117514caa89ddc63e0d439, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1004
+      value: -774
       objectReference: {fileID: 0}
     - target: {fileID: 6655317027247695836, guid: de538d394a117514caa89ddc63e0d439, type: 3}
       propertyPath: m_AnchoredPosition.y
