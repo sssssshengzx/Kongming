@@ -14,6 +14,7 @@ public class wishes : MonoBehaviour
     public GameObject toast;
     public GameObject toastFather;
     public GameObject ill;
+    
     //public Text txt;
     private void OnEnable()
     {
@@ -80,4 +81,6 @@ public class wishes : MonoBehaviour
         yield return new WaitForSeconds(2f);
         ill.SetActive(false);
     }
+
+    
 }

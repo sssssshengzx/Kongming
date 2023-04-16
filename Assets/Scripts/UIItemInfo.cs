@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class UIItemInfo : MonoBehaviour
 {
     public Text Date;
-    
+    //public Text Wish_content;
     private RecordItem item;
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Wish_content = GameObject.Find("wishcontent").GetComponent<Text>();
     }
 
     public void SetData(RecordItem item)
@@ -24,6 +24,7 @@ public class UIItemInfo : MonoBehaviour
         this.item = item;
 
         this.Date.text=item.Date;
+        //this.Wish_content.text=item.wishes;
     }
     
 }

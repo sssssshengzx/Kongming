@@ -7,6 +7,7 @@ public class LoadItemData : MonoBehaviour
     DBManager dbManager;
     private RecordItem item;
     private List<RecordItem> records;
+    public GameObject Wish_card;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,4 +43,8 @@ public class LoadItemData : MonoBehaviour
         return records;
 
     }
+
+    
+
+    
 }
