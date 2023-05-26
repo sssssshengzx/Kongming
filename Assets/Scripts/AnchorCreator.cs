@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.ARSubsystems;
+using Unity.VisualScripting;
+using UnityEngine.Video;
 
 namespace UnityEngine.XR.ARFoundation.Samples
 {
@@ -8,6 +11,8 @@ namespace UnityEngine.XR.ARFoundation.Samples
     [RequireComponent(typeof(ARRaycastManager))]
     public class AnchorCreator : MonoBehaviour
     {
+        public GameObject Notice;
+        private int count = 0;
         [SerializeField]
         GameObject m_Prefab;
 
@@ -16,7 +21,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
             get => m_Prefab;
             set => m_Prefab = value;
         }
-
+        
         public void RemoveAllAnchors()
         {
             Logger.Log($"Removing all anchors ({m_Anchors.Count})");
@@ -93,7 +98,11 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
             return anchor;
         }
-
+        IEnumerator closeNotice()
+        {
+            yield return new WaitForSeconds(4.0f);
+            Notice.SetActive(false);
+        }
         void Update()
         {
             if (Input.touchCount == 0)
@@ -116,8 +125,16 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
                 // Create a new anchor
                 var anchor = CreateAnchor(hit);
+
                 if (anchor)
                 {
+                    if (count == 0)
+                    {
+                        Notice.SetActive(true);
+                        Notice.GetComponent<VideoPlayer>().Play();
+                        StartCoroutine(closeNotice());
+                        count++;
+                    }                    
                     // Remember the anchor so we can remove it later.
                     m_Anchors.Add(anchor);
                 }
