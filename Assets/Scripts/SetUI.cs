@@ -55,8 +55,8 @@ public class SetUI : MonoBehaviour
         {
             GameObject go = this.createSpecificItem();
             spcitems.Add(go);
-            Button button = go.GetComponent<Button>();
-            button.onClick.AddListener(() => OnItemButtonPressed(go));
+            //Button button = go.GetComponent<Button>();
+            //button.onClick.AddListener(() => OnItemButtonPressed(go));
             UIItemInfo info=go.GetComponent<UIItemInfo>();
             if (info != null)
             {
