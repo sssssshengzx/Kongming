@@ -22,9 +22,9 @@ public class UIItemInfo : MonoBehaviour
             return;
         }
         this.item = item;
-
-        this.Date.text=item.Date;
+        
+        this.Date.text = item.Date;
         //this.Wish_content.text=item.wishes;
     }
-    
+
 }

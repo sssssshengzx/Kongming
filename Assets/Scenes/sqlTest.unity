@@ -1802,6 +1802,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.00071763154
       objectReference: {fileID: 0}
+    - target: {fileID: 1649244458662936047, guid: 1de4c8d8bd8e8fe4c97d81d1e3cd6303, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1649244458811644971, guid: 1de4c8d8bd8e8fe4c97d81d1e3cd6303, type: 3}
       propertyPath: cans
       value: 
@@ -1917,6 +1921,14 @@ PrefabInstance:
     - target: {fileID: 1758520797930597833, guid: 1de4c8d8bd8e8fe4c97d81d1e3cd6303, type: 3}
       propertyPath: m_IsTextObjectScaleStatic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971433200822693078, guid: 1de4c8d8bd8e8fe4c97d81d1e3cd6303, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fba69ebae4bc95b41b58472362943210, type: 3}
+    - target: {fileID: 3641091734377701641, guid: 1de4c8d8bd8e8fe4c97d81d1e3cd6303, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5386534651671860593, guid: 1de4c8d8bd8e8fe4c97d81d1e3cd6303, type: 3}
       propertyPath: m_SortingOrder
